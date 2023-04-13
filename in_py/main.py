@@ -1,6 +1,6 @@
 import sql_func
 import vk_crawler
-#import pandas as pd
+import pandas as pd
 
 
 def main():
