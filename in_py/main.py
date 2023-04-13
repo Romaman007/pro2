@@ -23,3 +23,7 @@ def main():
     # собираем все комментарии и их статистику
 
     vk_crawler.get_comments_stat(df, owner_id)
+    
+    
+    if __name__ =='__main__':
+        main()
