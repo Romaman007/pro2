@@ -3,7 +3,7 @@ import sqlite3 as sq
 
 def sql_start():
     global base, cur
-    base = sq.connect(r'/post.db')
+    base = sq.connect(r'..\post.db')
     cur = base.cursor()
     if base:
         print('DBase connected!')
