@@ -1,0 +1,4 @@
+pytest
+requests
+vk_api
+pandas
