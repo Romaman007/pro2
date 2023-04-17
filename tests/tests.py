@@ -1,4 +1,4 @@
-import sql_func
+from pro2.in_py import sql_func
 import pandas as pd
 
 
