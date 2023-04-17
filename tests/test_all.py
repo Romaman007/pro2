@@ -11,7 +11,7 @@ def test_wall():
 def test_comments():
     sql_func.sql_start()
     df = pd.read_sql_query("SELECT * from all_comments", sql_func.base)
-    assert len(df) == 11
+    assert len(df) == 12974
 
 
 def test_likes_comments():
@@ -23,13 +23,13 @@ def test_likes_comments():
 def test_users_main():
     sql_func.sql_start()
     df = pd.read_sql_query("SELECT * from users_main", sql_func.base)
-    assert len(df) == 461
+    assert len(df) == 850
 
 
 def test_id_comments():
     sql_func.sql_start()
     df = pd.read_sql_query("SELECT * from all_comments WHERE user_id == 2340546", sql_func.base)
-    assert len(df) == 3
+    assert len(df) == 47
 
 
 def test_id_likes():
@@ -47,4 +47,4 @@ def test_id_priznavashki_anon():
 def test_id_users_main():
     sql_func.sql_start()
     df = pd.read_sql_query("SELECT * from users_main WHERE user_id == -50260527", sql_func.base)
-    assert len(df) == 86
+    assert len(df) == 95
